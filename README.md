@@ -1,6 +1,22 @@
 # SS AI
 A personal Ai for screenshot analyzing, data fetching
 
+## Current foundation
+- TypeScript backend scaffold aligned to the architecture below
+- Ingestion stubs for Telegram, local device watcher, and cloud watcher
+- In-memory queue for early development, plus Redis client placeholder
+- Worker pipeline for OCR, vision analysis, source lookup, and tagging
+- Repository, processed JSON storage, vector index stub, and CSV-style XLSX export placeholder
+- Minimal HTTP API with `/health`, `/screenshots`, and `/exports/xlsx`
+
+## Quick start
+```bash
+npm install
+cp .env.example .env
+npm run check
+npm run dev
+```
+
 ### Feature
 - connects to cloud storage and automatically processes new screenshots.
 - Automatic Screenshot Detection in phones store

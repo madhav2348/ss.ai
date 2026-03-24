@@ -1,0 +1,21 @@
+{
+  "name": "ss-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal AI for screenshot analysis and metadata extraction.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "node --watch --loader ts-node/esm src/main.ts"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
